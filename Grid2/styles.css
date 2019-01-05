@@ -1,0 +1,47 @@
+.container {
+  color: white;
+  display: grid;
+  font-size: 2em;
+  font-weight: 900;
+  
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* FULLY RESPONSIVE TO WIDTH OF SCREEN!! */
+  /* grid-template-columns: repeat(auto-fit, 200px);  RESPONSIVE NUMBER OF COLUMNS BUT CAN LEAVE WHITESPACE */
+  /* grid-template-columns: 1fr 2fr 1fr;  will always have 3 columns */
+  /* grid-template-columns: repeat(3, 200px);  fixed columns */
+
+  grid-template-rows: repeat(6, 150px);  /* 6 is max number of rows needed (6 images in single column) */
+  /* grid-template-rows: 75px 75px; */
+
+  line-height: 150px;  /* same height as rows */
+  text-align: center;
+}
+
+.container div {
+  margin: .5px;
+}
+
+.container>div:nth-child(1) {
+  background-color: #ACF4B6;
+}
+
+.container>div:nth-child(2) {
+  background-color: #FFE975;
+}
+
+.container>div:nth-child(3) {
+  background-color: #5EFFFA;
+}
+
+.container>div:nth-child(2n+4) {
+  background-color: #E6B4FD;
+}
+
+.container>div:nth-child(5) {
+  background-color: #FD9A5C;
+}
+
+.container > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

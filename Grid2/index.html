@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Grid2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>CSS Grid2</h1>
+  <p>
+    <pre>
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-rows: repeat(6, 150px);
+
+      * auto-fit varies number of columns with width of container
+      * minmax() function defines a size range >= min and <= max
+    </pre>
+  </p>
+  <div class="container">
+    <div><img src="./img/forest.jpeg"></div>
+    <div><img src="./img/field.jpeg"></div>
+    <div><img src="./img/mountain.jpeg"></div>
+    <div><img src="./img/ocean.jpeg"></div>
+    <div><img src="./img/sunset.jpeg"></div>
+    <div><img src="./img/waterfall.jpeg"></div>
+  </div>
+</body>
+</html>
